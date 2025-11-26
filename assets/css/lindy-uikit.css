@@ -620,6 +620,61 @@ p {
     height: 30px;
   }
 }
+.card {
+  max-width: 100%;
+  border-radius:20px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid #000000;
+  transition: all 0.3s ease-out 0s;
+  justify-items: first baseline;
+}
+
+.card a {
+  text-decoration: none
+}
+
+.content {
+  padding: 1.1rem;
+}
+
+
+
+.title {
+  color: #111827;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+.desc {
+  margin-top: 0.5rem;
+  color: #6B7280;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.action {
+  display: inline-flex;
+  margin-top: 1rem;
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  align-items: center;
+  gap: 0.25rem;
+  background-color: #2563EB;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.action span {
+  transition: .3s ease;
+}
+
+.action:hover span {
+  transform: translateX(4px);
+}
 
 @media (max-width: 767px) {
   .header.header-2 .navbar-nav .sub-nav-toggler {
@@ -685,7 +740,7 @@ p {
   bottom: 0;
   width: 50%;
   height: 90%;
-  background: rgba(47, 128, 237, 0.2);
+  background:white;
   z-index: -1;
 }
 
@@ -870,7 +925,7 @@ p {
 .feature-style-2 {
   background: #ffffff;
   padding: 100px 0;
-  position: relative;
+  position: center;
 }
 
 .feature-style-2 .single-feature {
@@ -908,7 +963,7 @@ p {
 }
 
 .feature-style-2 .feature-img {
-  position: absolute;
+  position: center;
   right: 0;
   bottom: 0;
 }
@@ -1141,7 +1196,7 @@ p {
   content: '';
   position: absolute;
   height: 100%;
-  background: #585978;
+  background: #fcfcfd;
   width: 2px;
   top: 0;
   right: -35px;
@@ -1179,7 +1234,35 @@ p {
     font-size: 16px;
   }
 }
+.team {
+    padding: 80px 0;
+}
 
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.team-member {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(44, 83, 100, 0.3);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    border: 1px solid transparent #00110d;
+}
 /* ============================= 
     GALLERY-1 CSS
 ================================ */
